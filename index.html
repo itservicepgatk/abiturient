@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="ru-ru" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Абитуриенту ПГАТК - Наши соц-сети</title>
+    <link href="https://pgatkk.by/templates/stuniversal/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon">
+    
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700&subset=cyrillic" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <style>
+        /* Базовые стили в стиле pgatkk.by */
+        :root {
+            --primary-blue: #0e4684;
+            --accent-orange: #f34b0a;
+            --bg-color: #fafafa;
+            --text-color: #3e3e3e;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Roboto Condensed', sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        /* Шапка сайта */
+        .header {
+            background-color: var(--primary-blue);
+            padding: 20px 15px;
+            text-align: center;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            position: relative;
+            z-index: 2;
+        }
+
+        .logos {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 10px;
+        }
+
+        .logos img {
+            max-height: 80px;
+            filter: drop-shadow(0 0 5px rgba(255,255,255,0.3));
+        }
+
+        .header h1 {
+            color: #ffffff;
+            font-size: 1.3rem;
+            text-shadow: 0 0 2px #ffffff;
+            text-transform: uppercase;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        /* Главный баннер (Картинка сверху) */
+        .hero-banner {
+            width: 100%;
+            height: 220px;
+            /* Ссылка на картинку с вашего сайта */
+            background-image: url('https://pgatkk.by/images/slide/banner2022postupay.jpg');
+            background-size: cover;
+            background-position: center;
+            border-bottom: 5px solid var(--accent-orange);
+            position: relative;
+        }
+
+        /* Затемнение картинки, чтобы она смотрелась стильнее */
+        .hero-banner::after {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background: rgba(14, 70, 132, 0.2);
+        }
+
+        /* Основной контент */
+        .main-content {
+            flex: 1;
+            max-width: 500px;
+            margin: 0 auto;
+            padding: 30px 20px;
+            width: 100%;
+            text-align: center;
+        }
+
+        .welcome-title {
+            color: var(--accent-orange);
+            font-size: 2rem;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+
+        .welcome-subtitle {
+            font-size: 1.1rem;
+            margin-bottom: 30px;
+            color: #555;
+        }
+
+        /* Кнопки соцсетей */
+        .social-btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            padding: 18px 20px;
+            margin-bottom: 20px;
+            font-size: 1.3rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            text-decoration: none;
+            border-radius: 8px;
+            color: #fff;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .social-btn i {
+            font-size: 2.2rem;
+            margin-right: 15px;
+        }
+
+        .social-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 15px rgba(0,0,0,0.2);
+            color: #fff;
+        }
+
+        /* Цвета кнопок */
+        .btn-telegram {
+            background-color: #0088cc;
+        }
+        
+        .btn-instagram {
+            background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+        }
+
+        /* Подвал */
+        .footer {
+            background-color: #dddddd;
+            color: #3e3e3e;
+            text-align: center;
+            padding: 20px;
+            font-size: 0.9rem;
+            margin-top: auto;
+        }
+
+        .footer a {
+            color: var(--primary-blue);
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        /* Анимация появления */
+        .fade-in {
+            animation: fadeIn 0.8s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* Адаптация под совсем маленькие экраны */
+        @media (max-width: 400px) {
+            .hero-banner { height: 160px; }
+            .welcome-title { font-size: 1.6rem; }
+            .social-btn { font-size: 1.1rem; padding: 15px; }
+            .social-btn i { font-size: 1.8rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <header class="header">
+        <div class="logos">
+            <img src="https://pgatkk.by/images/logo/logo_pgatkk.png" alt="Логотип ПГАТК">
+            <img src="https://pgatkk.by/images/Gerb.gif" alt="Герб">
+        </div>
+        <h1>Пинский государственный аграрно-технический колледж имени А.Е.Клещева</h1>
+    </header>
+
+    <div class="hero-banner"></div>
+
+    <main class="main-content fade-in">
+        <h2 class="welcome-title">Абитуриенту 2026</h2>
+        <p class="welcome-subtitle">Узнавай новости первым! Подписывайся на наши социальные сети и будь в курсе всех событий.</p>
+
+        <a href="https://t.me/pgatkk" target="_blank" class="social-btn btn-telegram">
+            <i class="fa fa-telegram"></i> Наш Telegram
+        </a>
+
+        <a href="https://www.instagram.com/pgatkk" target="_blank" class="social-btn btn-instagram">
+            <i class="fa fa-instagram"></i> Наш Instagram
+        </a>
+    </main>
+
+    <footer class="footer">
+        <p>Брестская обл., г. Пинск, ул. Иркутско-Пинской дивизии, 25</p>
+        <p>Приемная: 8 (0165) 63-92-93 | <a href="mailto:uo@pgatkk.by">uo@pgatkk.by</a></p>
+        <p style="margin-top: 10px;">&copy; 2026 ПГАТККЛЕЩЕВА</p>
+    </footer>
+
+</body>
+</html>
